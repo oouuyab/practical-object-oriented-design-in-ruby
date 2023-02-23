@@ -1,9 +1,9 @@
 {
   class Gear {
-    private _chainRing: number;
-    private _cog: number;
-    private _rim: number;
-    private _tire: number;
+    _chainRing: number;
+    _cog: number;
+    _rim: number;
+    _tire: number;
 
     constructor(chainRing: number, cog: number, rim: number, tire: number) {
       this._chainRing = chainRing;
@@ -12,19 +12,19 @@
       this._tire = tire;
     }
 
-    get chainRing() {
+    get chainRing(): number {
       return this._chainRing;
     }
 
-    get cog() {
+    get cog(): number {
       return this._cog;
     }
 
-    get rim() {
+    get rim(): number {
       return this._rim;
     }
 
-    get tire() {
+    get tire(): number {
       return this._tire;
     }
 

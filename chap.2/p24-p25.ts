@@ -12,12 +12,28 @@
       this._tire = tire;
     }
 
+    get chainRing() {
+      return this._chainRing;
+    }
+
+    get cog() {
+      return this._cog;
+    }
+
+    get rim() {
+      return this._rim;
+    }
+
+    get tire() {
+      return this._tire;
+    }
+
     ratio(): number {
-      return this._chainRing / this._cog;
+      return this.chainRing / this.cog;
     }
 
     gearInches(): number {
-      return this.ratio() * (this._rim + this._tire * 2);
+      return this.ratio() * (this.rim + this.tire * 2);
     }
   }
 

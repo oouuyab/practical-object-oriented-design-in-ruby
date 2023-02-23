@@ -1,7 +1,7 @@
 {
   class Gear {
-    private _chainRing: number;
-    private _cog: number;
+    _chainRing: number;
+    _cog: number;
 
     constructor(chainRing: number, cog: number) {
       this._chainRing = chainRing;
